@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Modal</title>
+    <link rel="stylesheet" href="t.css">
+</head>
+<body>
+    <div class="t-container">
+            <h2>Login Modal</h2>
+            <button class="t-open t-green t-button t-large" onclick="document.getElementById('t-box').style.display='block'">Login</button>
+
+        <div id="t-box" class="t-modal t-row" style="display: none;">
+            <div class="t-modal-content t-animate-zoom" style="width: 600px;">
+                <div class="t-center">
+                    <span class="t-close t-button t-display-topright" onclick="document.getElementById('t-box').style.display='none';">X</span>
+                    <img src="img_avatar4.png" alt="#" width="30%">
+                </div>
+                <form class="t-container">
+                    <div class="content-section t-row">
+                        <label for="t-id">
+                            <b>User name</b>
+                        </label>
+                        <input id="t-id" class="t-input " type="text" placeholder="Tên đăng nhập" >
+                        
+                        <label for="t-pass">
+                            <b>Password</b>
+                        </label>
+                        <input id="t-pass" class="t-input " type="password" placeholder="Mật khẩu" >
+                        <button class="t-green t-button t-large t-block" onclick="Audio.play();Showpost()" type="submit">Login</button>
+                        <input class="t-check" type="checkbox" checked="checked">Remember
+                    </div>
+                </form>
+                <div class="t-container t-light-gray">
+                        <button class="t-close t-button t-red" onclick="document.getElementById('t-box').style.display='none';" type="button">Cancel</button>
+                        <span class="t-span">
+                            Forgot
+                           <a href="#">password</a>
+                        </span>
+                </div>
+            </div>    
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,143 @@
+*,*:after,
+*:before{
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Verdana', sans-serif !important;
+    line-height: 1.5;
+}
+b{
+    display: block;
+}
+img{
+    vertical-align: middle!important;
+    border-radius: 50%; ;
+    margin-top: 16px;
+}
+input{
+    font:inherit;
+    margin: 0;
+}
+h2{
+    font-weight: 400;
+    font-size: 30px;
+    margin: 10px 0;
+}
+.t-input::before,
+.t-input::after{
+    clear: both;
+    content: "";
+    display: block;
+}
+.t-container{
+    padding: 0.1em 16px;
+}
+.content-section{
+    margin: 16px 0px;
+}
+.t-center{
+    text-align: center!important;
+}
+
+.t-button {
+    border: none;
+    display: inline-block;
+    padding: 12px 24px;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.t-button:hover{
+    background-color: #ccc;
+    color: #000;
+}
+
+.t-green {
+    color: #fff;
+    background-color: #4CAF50;
+}
+
+.t-large{
+    font-weight: 600;
+    font-size: 18px!important;
+}
+.t-modal{
+    z-index: 3;
+    display: none;
+    padding-top: 100px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.t-modal-content{
+    margin: auto;
+    max-width: calc(100% - 32px);
+    background-color: #fff;
+    padding: 0;
+    outline: 0;
+    position: relative;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+}
+
+.t-display-topright{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.t-input{
+    margin: 8px 0;
+    padding:16px;
+    border: 1px solid #ccc;
+    display: block;
+    width: 100%;
+}
+.t-block{
+    width: 100%;
+    display: block;
+    padding: 12px 16px;
+    margin: 16px 0;
+}
+
+.t-check {
+    margin-right: 4px;
+    margin-top: 16px;
+    width: 24px;
+    height: 24px;
+    top: 6px; 
+    position: relative;
+}
+.t-light-gray{
+    padding-top: 16px;
+    padding-bottom: 16px;
+    color: black;
+    background-color: #f1f1f1;
+    border-top: 1px solid #ccc;
+}
+.t-red{
+    color: #fff;
+    background-color: #f44336;
+}
+.t-span{
+    float: right;
+    padding: 8px 16px;
+}
+.t-animate-zoom{
+    animation: animatezoom 0.6s;
+}
+@keyframes animatezoom{
+    from{
+        opacity: 0;
+        transform: scale(0);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
